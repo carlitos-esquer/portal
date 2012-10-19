@@ -1,0 +1,60 @@
+html
+	head
+		script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"
+		script type="text/javascript" src="/js/common.js"
+		link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Play:400,700'
+		link id="estilo" rel="stylesheet" type="text/css" href="/css/layout.css"
+		javascript:
+			$(document).ready( function () {
+				prepararMenus();
+				activarMenus();
+				setInterval(function(){sliding()},5000);
+			});
+		title Zinlim Soluciones Web
+	body
+		.topbar
+			.menu==slim :menu
+		.main
+			.ingresar 
+				a href='/ingresar' ingresar
+			.contenido==yield
+			.promociones Promociones
+			.noticias Noticias
+		.slider
+			.banner
+				img id="banner" src="/img/banner1.png" width="512px" height="256px"
+			.logo
+				img src="/img/zinlim-0.9.svg"  /*height="100px" width="200px"*/
+			.empresa 
+				p Soluciones Web
+		.creditos
+			.servicios==slim :menu_servicios
+			.nosotros==slim :menu_nosotros
+			.contacto==slim :menu_contacto
+		.derechos Derechos Reservados 2012, Zinlim Soluciones
+		.info id="info-inicio"
+			h2 Volver al inicio
+			p Ir a la página principal de Zinlim Soluciones Web
+		.info id="info-desarrollo"
+			h2 Información sobre desarrollo
+			p Elige uno de nuestros planes de desarrollo de aplicaciones Web y de Escritorio
+		.info id="info-capacitacion"
+			h2 Información sobre capacitación
+			p Aquí encontrará nuestros planes de capacitación, cursos de programación, diseño y otros temas
+		.info id="info-portafolio"
+			h2 Nuestro Portafolio
+			p Revisa las soluciones que hemos diseñado y descarga los demos
+		.info id="info-blog"
+			h2 El blog de la empresa
+			p Comenta sobre nuestros productos, lee y opina sobre temas de interés
+		.info id="info-nosotros"
+			h2 Acerca de nosotros
+			p Localiza nuestra ubicación y contactanos por diversos medios 
+		.social
+			a href="http://www.facebook.com/nosotros"
+				img src="/img/facebook-logo.png" height="32px" width="32px" style="{padding-right:8px}"
+			a href="http://www.twitter.com/nosotros"
+				img src="/img/twitter-logo.png" height="32px" width="32px"
+		.chat
+			p Chatea
+			

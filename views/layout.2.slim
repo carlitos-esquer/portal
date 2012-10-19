@@ -1,0 +1,24 @@
+head
+	script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"
+	script type="text/javascript" src="/js/common.js"
+	link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Play:400,700'
+	link rel="stylesheet" type="text/css" href="/css/layout.css"
+	javascript:
+		$(document).ready( function () {
+			//creditos();
+		});
+body
+	.main
+		.slider
+			.empresa id="empresa" led Soluciones
+		.logo led Soluciones
+		.ingresar 
+			a href='/ingresar' ingresar
+		.menu==slim :menu
+		.contenido==yield
+		.promociones Promociones
+		.creditos
+			.servicios==slim :menu_servicios
+			.nosotros==slim :menu_nosotros
+			.contacto==slim :menu_contacto
+		.derechos Derechos Reservados 2012
