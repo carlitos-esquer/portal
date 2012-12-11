@@ -1,32 +1,52 @@
 html
 	head
-		script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"
+		/*script type="text/javascript" src="/js/jquery-1.5.1.min.js"*/
+		script src="//ajax.googleapis.com/ajax/libs/prototype/1.7.1.0/prototype.js"		
+		/*script type="text/javascript" src="/js/window/prototype.js"*/
+		script type="text/javascript" src="/js/window/window.js"
+		script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"
+		script type="text/javascript" src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"
+		link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/redmond/jquery-ui.css"
+		link rel="stylesheet" type="text/css" href="/js/window/themes/default.css"
+		link rel="stylesheet" type="text/css" href="/js/window/themes/lighting.css"
 		script type="text/javascript" src="/js/common.js"
 		link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Play:400,700'
 		link id="estilo" rel="stylesheet" type="text/css" href="/css/layout.css"
 		javascript:
-			$(document).ready( function () {
+			/*function ready() {
+				alert("Todo Listo!","listo...");
+				setInterval(function(){fotograma()},3000);
+				prepararEfectos();
+				//activarMenus();
+			}*/
+			var $j = jQuery.noConflict();
+			$j(document).ready( function () {
 				prepararMenus();
 				activarMenus();
-				setInterval(function(){sliding()},5000);
+				setInterval(function(){sliding()},4000);
+				//mostrarVentana();
+				activarControles();
+				cambiarTema();
 			});
 		title Zinlim Soluciones Web
+	/*onload="ready()"*/	
 	body
-		.topbar
+		.banner
+			.slider id="slider"
+				/*img id="slider" src="/img/banner1.png" width="508px" height="252px"*/
+			.logo
+				img src="/img/zinlim-shadow2.png"  height="100px" width="320px" /*Agregado tamaño menor de logotipo*/
+			.empresa 
+				p Soluciones Web
+		.menubar id="menubar" 
 			.menu==slim :menu
+			button id="tema" Tema
 		.main
 			.ingresar 
-				a href='/ingresar' ingresar
+				a id="ingresar" href='#' ingresar
 			.contenido==yield
 			.promociones Promociones
 			.noticias Noticias
-		.slider
-			.banner
-				img id="banner" src="/img/banner1.png" width="512px" height="256px"
-			.logo
-				img src="/img/zinlim-0.9.svg"  /*height="100px" width="200px"*/
-			.empresa 
-				p Soluciones Web
 		.creditos
 			.servicios==slim :menu_servicios
 			.nosotros==slim :menu_nosotros
@@ -36,10 +56,10 @@ html
 			h2 Volver al inicio
 			p Ir a la página principal de Zinlim Soluciones Web
 		.info id="info-desarrollo"
-			h2 Información sobre desarrollo
+			h2 Encuentra Soluciones
 			p Elige uno de nuestros planes de desarrollo de aplicaciones Web y de Escritorio
 		.info id="info-capacitacion"
-			h2 Información sobre capacitación
+			h2 Capacítate
 			p Aquí encontrará nuestros planes de capacitación, cursos de programación, diseño y otros temas
 		.info id="info-portafolio"
 			h2 Nuestro Portafolio
@@ -52,9 +72,9 @@ html
 			p Localiza nuestra ubicación y contactanos por diversos medios 
 		.social
 			a href="http://www.facebook.com/nosotros"
-				img src="/img/facebook-logo.png" height="32px" width="32px" style="{padding-right:8px}"
+				img id="facebook" src="/img/facebook-logo.png" height="32px" width="32px" style="{padding-right:8px}"
 			a href="http://www.twitter.com/nosotros"
-				img src="/img/twitter-logo.png" height="32px" width="32px"
+				img id="twitter" src="/img/twitter-logo.png" height="32px" width="32px"
 		.chat
 			p Chatea
 			

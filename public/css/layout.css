@@ -1,11 +1,8 @@
-/*Version 0.7 del estilo del layout*/
+/*Version 0.9 del estilo del layout*/
 /* Color original de fondo #510052*/
 /* Color de fondo para esta version #3C003D*/
 body {
-	background-color: #E5E0FF;
-	/*background-color: white;
-	/*background-image:url('/img/simple-back04.png');*/
-	background-repeat:repeat-y;
+	background-color: #DAE2E9;
 	margin: 0;
 	font-family: 'Play', sans-serif;
 }
@@ -15,75 +12,20 @@ a:visited {color:yellow;}
 a:hover {color:black;}
 a:active {color:yellow;}
 
-div {
-	/*background-color: none;*/
-}
-
 h2 {
 	font-style: italic;
 }
 
-.topbar {
-	position: absolute;
-	top: 258;
-	left: 0;
-	height: 50;
-	width: 100%;
-	border: 1px solid lightgray;
-	border-width: 0 0 1px 0;
-	/*border-bottom-color: gray;*/
-	background-color: darkslateblue;
-	background-image: url("/img/back-topbar07.svg");
-	background-repeat:no-repeat;
-	/*#221111;
-	/*background-color:#5f0060; */
-	z-index: 9998;
-}
-
-.icons {
-	position: relative;
-	width: 360px;
-	height: 48px;
-	margin-left: auto;
-	margin-right: auto;
-	/*background-color: yellow;*/
-}
-
-.main {
-	position: relative;
-	top: 310;
-	margin-top: 2;
-	margin-bottom: 2;
-	border-style: solid;
-	border-width: 0;
-	border-color: black;
-	margin-left: auto ;
-	margin-right: auto ;
-	height: 960;
-	width: 1024;
-	/*background-color: none;*/
-	/*background-image: url("/img/back-main-01.png");*/
-	border-top-left-radius: 2mm;
-	border-top-right-radius: 2mm;
-	border-bottom-left-radius: 2mm;
-	border-bottom-right-radius: 2mm;
-}
-
 .logo {
 	position:absolute;
-	/*display: block;*/
-	top:30;
+	top:14;
 	left:0;
 	text-align: center;
-	/*vertical-align: center;*/
 	margin: 0;
 	padding: 0;
 	border: 0;
 	height: 200;
-	width: 50%;
-	/*background-color: white;
-	/*background-image:url("/img/logo-zinlim-02.png");
-	background-repeat: no-repeat;*/
+	width: 40%;
 }
 
 .ingresar {
@@ -93,7 +35,6 @@ h2 {
 	height: 20;
 	width: 20%;
 	text-align: center;
-	/*background-color:green;*/
 }
 
 .ingresar a:link { color: black; }
@@ -101,34 +42,26 @@ h2 {
 .ingresar a:hover { color: red; }
 .ingresar a:active { color: yellow; }
 
-.slider	{
-	position:absolute;
+.banner	{
+	position: absolute;
 	top: 0;
-	/**margin-left: auto ;
-	margin-right: auto ;**/
-	height: 256;
+	left: 0;	
+	height: 196;
 	width: 100%;
-	background-color: #3C003D;
-	/*background-color: darkslateblue;*/
-	border: 1px solid lightgray;
-	border-width: 1px 0 1px 0;
-	/*border-bottom-color: gray;*/
+	background-color: #336E9E;
 	background-image:url("/img/back01-b.png");
+	background-size: 256px 128px;
 	background-repeat:no-repeat;
-	/**border-top-left-radius: 5mm;
-	border-top-right-radius: 5mm;
-	/*border-bottom-left-radius: 6mm;
-	border-bottom-right-radius: 6mm;*/
 	color: red;
 	text-align: center;
 	vertical-align: bottom;
 }
 
 .empresa {
-	position: relative;
-	top: 80%;
-	width: 60%;
-	height: 64px;
+	position: absolute;
+	top: 64;
+	width: 50%;
+	height: 72px;
 	border: 0;
 	margin: 0;
 	padding: 0;
@@ -136,10 +69,9 @@ h2 {
 	margin-right: auto;
 	text-align: center;
 	font-size: 2em;
-	/*font-weight: bold;*/
 	color: #7f1f7f;
 	color: #E5CDE6;
-	/*background-color: white;*/
+	color: white;
 	text-shadow:2px 2px 4px #000000;
 	overflow: hidden;
 	text-overflow:  ellipsis;
@@ -147,20 +79,43 @@ h2 {
 
 .empresa p {
 	position: relative;
-	top: -16;
+	top: 0;
 	padding: 0;
 }
 
-.banner{
+.slider{
 	position:absolute;
-	top: 0;
-	right: 0;
+	top: 8px;
+	right: 8px;
+	width: 400px;
+	height: 224px;
+	border: white solid 4px;
+	border-radius: 3mm;
+	background-image: url("/img/slider1.png");
+	background-size: 400px 224px;
+	background-repeat: none;
+	box-shadow: 4px 2px 6px black;
+	z-index: 9999;
 }
+
+.menubar {
+	position: absolute;
+	top: 196;
+	left: 0;
+	height: 52;
+	width: 100%;
+	border: 1px solid lightgray;
+	border-width: 0 0 1px 0;
+	background-color: #142F45;
+	box-shadow: 0px 4px 6px #45434C;
+	z-index: 9998;
+}
+
 .menu {
 	position:relative;
 	top: 0;
 	width: 460px;
-	height: 48px;
+	height: 52px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -183,65 +138,77 @@ h2 {
 	border: 0;
 	padding: 0;
 	padding-right: 12px;
-/**	border-style: solid;
-	border-color: white;
-	border-top-width: 1;
-	border-right-width: 1;
-	border-left-width: 1;
-	border-bottom-width: 1;**/
+}
+
+#tema {
+	position: absolute;
+	top: 6px;
+	left: 6px;
 }
 
 .info{
-	position: fixed;
-	top:306px;
+	position: absolute;
+	display: none;
+	top:252px;
 	width: 320px;
 	height: 160px;
-	/*margin-left: auto;
-	margin-right: auto;*/	
 	color: white;
-	/*color: #00ACED;*/
-	/*background-color: none;*/
-	/*background-image: url("/img/globe06.png");
-	background-image: url("/img/back-info-02.png");*/
-	background-image: url("/img/back-info.png");
+	background-image: url("/img/backs/back-info-07.png");
 	text-align: center;
-	/*border-style: solid;
-	border-color: white;
-	border-width: 2px;
-	border-top-left-radius: 3mm;
-	border-top-right-radius: 3mm;
-	border-bottom-left-radius: 3mm;
-	border-bottom-right-radius: 3mm;*/
+	font-size: 14px;
 	z-index: 9999;
 }
 
 .info h2 {
-	/*padding: 2px;*/
-	color: lightgray;
+	color: white;
 	font-style: italic;
-	text-shadow: orangered 1px 1px 0px;
+	text-shadow: black 1px 1px 0px;
 }
 
 .info p {
-	padding-left: 2px;
-	padding-right: 2px;
+	margin-left: 4px;
+	margin-right: 4px;
+}
+
+.main {
+	position: absolute;
+	top: 272;
+	left: 12%;
+	margin-top: 2;
+	margin-bottom: 2;
+	border-style: solid;
+	border-width: 1;
+	border-color: black;
+	margin-left: auto ;
+	margin-right: auto ;
+	height: 600;
+	width: 76%;
+	background-color: #E5E0FF;
+	background-color: white;
+	border-top-left-radius: 2mm;
+	border-top-right-radius: 2mm;
+	border-bottom-left-radius: 2mm;
+	border-bottom-right-radius: 2mm;
+	box-shadow: 4px 4px 6px #45434C;
+	/*box-shadow: 4px 4px 6px #45434C;*/
 }
 
 .contenido {
 	position:absolute;
 	top:22;
 	left:0;
-	height: 700;
+	height: 440;
 	width: 80%;
 	color: #510052;
-	/*color: black;*/
-	/*background-color:none;*/
-	border-style: solid;
+	margin-left: 12px;
+	margin-right: 8px;
+	border-style: none;
 	border-color: #510052;
 	border-top-width: 0;
 	border-right-width: 1;
 	border-left-width: 0;
 	border-bottom-width: 0;
+	/*font-size: 14px;*/
 }
 
 .contenido h1, .contenido h2, .contenido p {
@@ -252,7 +219,8 @@ h2 {
 
 .contenido h1 {
 	color: #E5CDE6;
-	text-shadow: black 2px 2px 4px;
+	color: white;
+	text-shadow: black 2px 3px 4px;
 }
 
 .contenido h2 {
@@ -261,8 +229,10 @@ h2 {
 
 .contenido p {
 	position: relative;
-	left: 12;
+	left: 0;
+	color: #142F45;
 	text-align: left;
+	/*font-size: 1em;*/
 }
 
 .promociones {
@@ -271,7 +241,7 @@ h2 {
 	right:0;
 	margin: 0;
 	padding: 0;
-	height: 450;
+	height: 360;
 	width: 19.9%;
 	/*background-color:none;*/
 	/*border-style: solid;
@@ -285,11 +255,11 @@ h2 {
 
 .noticias {
 	position:absolute;
-	top:472;
+	top:382;
 	right:0;
 	margin: 0;
 	padding: 0;
-	height: 450;
+	height: 360;
 	width: 19.9%;
 	/*background-color:none;
 	border-style: solid;
@@ -303,25 +273,27 @@ h2 {
 
 .creditos {
 	position:absolute;
-	top:1048;
+	top:902;
 	left:0;
 	height: 200;
 	width: 100%;
 	color: white;
-	background-color:#3C003D;
-	background-image: url("/img/back-creditos-03.png");
-	background-repeat: no-repeat;
+	background-color:#142F45;
+	/*background-image: url("/img/creditos-fondo.jpg");
+	/*background-repeat: no-repeat;*/
 	border-style: solid;
-	border-color: gray;
+	border-color: ligtgray;
 	border-width:1;
 	border-left-width: 0;
 	border-right-width: 0;
+	box-shadow: 0px -3px 4px #45434C;
 	/*border-top-left-radius: 3mm;
 	border-top-right-radius: 3mm;
 	border-bottom-left-radius: 3mm;
 	border-bottom-right-radius: 3mm;*/
 	text-align: left;
 	text-shadow: black 1px 1px 0px;
+	font-size: 14px;
 }
 
 .creditos p {
@@ -360,13 +332,13 @@ h2 {
 
 .derechos {
 	position:absolute;
-	top:1250;
+	top:1103;
 	left:0;
 	height: 47;
 	width: 100%;
 	text-align: right;
 	color: white;
-	background-color: darkslateblue;
+	background-color: #336E9E;
 	font-size: 14px;
 }
 
@@ -379,7 +351,7 @@ h2 {
 	height: 78;
 	color: white;
 	background-color: black;
-	opacity: 0.8;
+	opacity: 0.9;
 	border-style: solid;
 	border-width: 1px;
 	border-left-width: 0;
@@ -388,6 +360,7 @@ h2 {
 	border-top-right-radius: 3mm;
 	/*border-bottom-left-radius: 3mm;*/
 	border-bottom-right-radius: 3mm;
+	box-shadow: 2px 2px 4px black;
 	z-index:9999;
 }
 

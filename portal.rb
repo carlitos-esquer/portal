@@ -44,7 +44,7 @@ get '/nosotros' do
 end
 
 get '/blog' do
-	slim :blog
+	redirect "http://blog.zinlim.com"
 end
 
 get '/ingresar' do
