@@ -3,7 +3,7 @@ function my(id){
 	return document.getElementById(id);
 }
 
-/*
+/* Estas funciones ya están en prototype.js
 Object.prototype.mouseenter = function(f) { 
 	if (this.onmouseenter != undefined ) {
 		this.onmouseenter = f;
@@ -16,7 +16,7 @@ function array_each(f){
 		f(this[e]);
 	}
 }
-/*
+/* Estas funciones ya están en prototype.js
 Array.prototype.each  = array_each;
 Array.prototype.empty = function() { return this.length == 0; }
 Array.prototype.first = function() { return this.empty() ? undefined : this[0]; }
