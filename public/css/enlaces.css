@@ -1,0 +1,77 @@
+.enlaces {
+	position:relative;
+	top:920;
+	margin-left:auto;
+	margin-right:auto;
+	height: 200;
+	width: 1024px;
+	color: #241c1c;
+	/*background-color:#142F45;
+	/*background-image: url("/img/creditos-fondo.jpg");
+	/*background-repeat: no-repeat;*/
+	/*border-style: solid;
+	border-color: ligtgray;
+	border-width:1;
+	border-left-width: 0;
+	border-right-width: 0;
+	box-shadow: 0px -3px 4px #45434C;
+	/*border-top-left-radius: 3mm;
+	border-top-right-radius: 3mm;
+	border-bottom-left-radius: 3mm;
+	border-bottom-right-radius: 3mm;*/
+	text-align: left;
+	/*text-shadow: black 1px 1px 0px;*/
+	font-size: 1em;
+}
+
+.enlaces p {
+	position: relative;
+	left: 34px;
+	margin: 0;
+	border: 0;
+	padding: 0;
+	font-size: 1.4em;
+	text-shadow: #241c1c 4px 4px 8px;
+}
+
+.enlaces ul {
+	list-style-type: none;
+}
+
+.enlaces a:link { color: #241c1c; }
+.enlaces a:visited { color: black; }
+.enlaces a:hover { color: #423434; }
+.enlaces a:active { color: yellow; }
+
+.soluciones {
+	position: absolute;
+	top: 20;
+	left: 4%;
+	height: 160;
+	width: 20%;
+}
+
+.informacion {
+	position: absolute;
+	top: 20;
+	left: 28%;
+	height: 160;
+	width: 20%;
+}
+
+.herramientas {
+	position: absolute;
+	top: 20;
+	left: 52%;
+	height: 160;
+	width: 20%;
+}
+
+.nosotros {
+	position: absolute;
+	top: 20;
+	left: 76%;
+	height: 160;
+	width: 20%;
+}
+

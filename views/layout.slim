@@ -11,7 +11,9 @@ html
 		link rel="stylesheet" type="text/css" href="/js/window/themes/lighting.css"
 		script type="text/javascript" src="/js/common.js"
 		link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Play:400,700'
-		link id="estilo" rel="stylesheet" type="text/css" href="/css/layout.css"
+		link id="layout_css" rel="stylesheet" type="text/css" href="/css/layout.css"
+		link id="index_css" rel="stylesheet" type="text/css" href="/css/index.css"
+		link id="enlaces_css" rel="stylesheet" type="text/css" href="/css/enlaces.css"
 		javascript:
 			/*function ready() {
 				alert("Todo Listo!","listo...");
@@ -26,16 +28,14 @@ html
 				setInterval(function(){sliding()},4000);
 				//mostrarVentana();
 				activarControles();
-				cambiarTema();
+				//cambiarTema();
 			});
 		title Zinlim Soluciones Web
 	/*onload="ready()"*/	
 	body
 		.banner
-			.slider id="slider"
-				/*img id="slider" src="/img/banner1.png" width="508px" height="252px"*/
 			.logo
-				img src="/img/logos/zinlim-logo.png"  height="100px" width="320px" /*Agregado tamaño menor de logotipo*/
+				img src="/img/logos/zinlim-logo.png"  height="120px" width="374px" /*Agregado tamaño menor de logotipo*/
 			.empresa 
 				p Soluciones Web
 		.menubar id="menubar" 
@@ -45,12 +45,12 @@ html
 			.ingresar 
 				a id="ingresar" href='#' ingresar
 			.contenido==yield
+			/*.slider id="slider"
+			/*img id="slider" src="/img/banner1.png" width="508px" height="252px"*/
+
 			.promociones Promociones
 			.noticias Noticias
-		.creditos
-			.servicios==slim :menu_servicios
-			.nosotros==slim :menu_nosotros
-			.contacto==slim :menu_contacto
+		.enlaces==slim :enlaces
 		.derechos Derechos Reservados 2012, Zinlim Soluciones
 		.info id="info-inicio"
 			h2 Volver al inicio

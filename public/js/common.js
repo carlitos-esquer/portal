@@ -113,8 +113,9 @@ function mostrarVentana(){
 	win1.getContent().update("<h1>¡Bienvenido a Zinlim!</h1><p>Soluciones de Código Abierto, para la Web y el Escritorio<p>"); 
 	win1.showCenter();
 }
-var temas=[  ["darkslateblue","#3C003D","#F2ECFA"],
-					   ["#142F45","#336E9E","#DAE2E9"],
+var temas=[   [ "white","#3C003D","#E2DBE3"],
+			 ["#214478","#3C003D","#E2DBE3"],
+			 ["#142F45","#336E9E","#DAE2E9"],
              ["#231862","#483D8B","#D2CDEF"],
              ["#154815","#39BF39","#CFEBCF"],
              ["#3C003D","#9A5F9B","#F1D5F2"],
@@ -123,7 +124,6 @@ var temas=[  ["darkslateblue","#3C003D","#F2ECFA"],
              ["#39BF39","#154815","#B9E6B9"],
              ["#9A5F9B","#3C003D","#F1D5F2"],
              ["#3C003D","white","lightgray"],
-             ["white","#3C003D","#F2F1F0"],
              ["#235C72","#2BB7EC","#C3D2D8"]
            ];
 var temaActual = 0;
