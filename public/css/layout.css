@@ -3,7 +3,7 @@
 /* Color de fondo para esta version #3C003D*/
 body {
 background-color: #E2DBE3	;
-font-family: 'Play', sans-serif;
+font-family: 'Ubuntu', sans-serif;
 }
 
 a:link {color:white;}
@@ -208,7 +208,7 @@ h2 {
 	color: #510052;
 	margin-left: auto;
 	margin-right: auto;
-	border-style: solid;
+	/*border-style: solid;
 	border-color: yellow; /* Para fines de desarrollo */
 	/*font-size: 14px;*/
 }
@@ -222,7 +222,7 @@ h2 {
 .contenido h1 {
 	color: #E5CDE6;
 	color: white;
-	text-shadow: black 2px 3px 4px;
+	text-shadow: black 2px 3px 8px;
 }
 
 .contenido h2 {
@@ -279,7 +279,7 @@ h2 {
 	left:0;
 	height: 47;
 	width: 100%;
-	text-align: right;
+	text-align: center;
 	color: #241c1c;
 	background-color#E2DBE3;
 	font-size: 14px;
@@ -293,7 +293,7 @@ h2 {
 	width: 32;
 	height: 78;
 	color: white;
-	background-color: black;
+	background-color: #3C003D;
 	opacity: 0.9;
 	border-style: solid;
 	border-width: 1px;
