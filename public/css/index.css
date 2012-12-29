@@ -57,11 +57,11 @@
 .recuadros p{
 	font-size: 0.9em;
 	padding: 8px;
-	text-align: justify;
 }
 
 .recuadros h2{
 	font-style: normal;
+	text-align: left;
 }
 
 .recuadros img {
