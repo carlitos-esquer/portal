@@ -71,7 +71,7 @@ function activarMenus(){
 				$j("#info-"+m).slideDown("fast");
 			});
 			$j("#mnu-"+m).mouseleave( function() {
-				$j("#mnu-"+m).css("opacity","0.8");
+				$j("#mnu-"+m).css("opacity","0.7");
 				/*$j("#mnu-"+m).attr("width","48px");
 				$j("#mnu-"+m).attr("height","48px");*/
 				$j("#info-"+m).slideUp("fast");
