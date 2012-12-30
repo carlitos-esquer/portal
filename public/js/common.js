@@ -134,9 +134,9 @@ function cambiarTema(){
 	$j(".menubar").css("background-color",temas[temaActual][0]);
 	$j("body").css("background-color",temas[temaActual][2]);
 	$j(".creditos").css("background-color",temas[temaActual][0]);
-	$j(".derechos").css("background-color",temas[temaActual][1]);
+	$j(".derechos").css("background-color",temas[temaActual][0]);
 	$j(".slider").css("border-color",temas[temaActual][2]);
-	$j(".social").css("background-color",temas[temaActual][0]);
+	$j(".social").css("background-color",temas[temaActual][1]);
 	if (temaActual < tn) { 
 		temaActual += 1;
 	}

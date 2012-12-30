@@ -1,13 +1,10 @@
-//alert("probar que carga");
-
-
-var next = 0;
+var next = 1;
 
 $j(document).ready( function () {
 	$j("#boton_index").click(function (){
 		//alert("si entra");
 		cambiarfoto(next);
-		if (next < 2) {
+		if (next < 3) {
 		next += 1;
 		}
 		else {
@@ -22,7 +19,11 @@ $j(document).ready( function () {
 	});
 });
 
-function cambiarfoto(n){
-	alert("Foto " + n.toString());
-}
+var fotos = ["keyboard-540x360.jpg","circuito-540x360.jpg","wires-540x360.jpg","classroom-540x360.jpg" ]
 
+var texto = new Object;
+texto.h1 = "Otro texto ";
+function cambiarfoto(n){
+	$j("#img_index").attr("src","/img/fotos/"+fotos[n]);
+	$j(".texto h1").text(texto.h1+n.toString());
+}
