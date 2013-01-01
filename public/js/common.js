@@ -90,7 +90,7 @@ function sliding(){
 }
 
 var opaco = false;
-function fotograma(){
+function fotogramaX(){
 	//alert("hola","mundo");
 	var o = Math.random(1);
 	var opacities = [0.4,0.5,0.6,0.7,0.8,0.9,1];
@@ -134,7 +134,7 @@ function cambiarTema(){
 	$j(".menubar").css("background-color",temas[temaActual][0]);
 	$j("body").css("background-color",temas[temaActual][2]);
 	$j(".creditos").css("background-color",temas[temaActual][0]);
-	$j(".derechos").css("background-color",temas[temaActual][0]);
+	$j(".derechos").css("background-color",temas[temaActual][2]);
 	$j(".slider").css("border-color",temas[temaActual][2]);
 	$j(".social").css("background-color",temas[temaActual][1]);
 	if (temaActual < tn) { 

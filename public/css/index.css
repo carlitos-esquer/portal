@@ -5,7 +5,7 @@
 	height: 420px;
 	width: 40%;
 	color: white;
-	text-align: justify;
+	text-align: left;
 	font-family: 'Ubuntu', sans-serif;
 }
 
@@ -66,9 +66,9 @@
 
 .recuadros img {
 	position: absolute;
-	top: 160;
-	right:4px;
-	bottom: 4px;	
+	/*top: 160;*/
+	right:4mm;
+	bottom: 2mm;	
 	/*float: right;*/
 }
 
