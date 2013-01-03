@@ -54,6 +54,17 @@
 	font-family: 'Ubuntu', sans-serif;
 }
 
+.recuadros div {
+	position: absolute;
+	top: 0px;
+	width: 30%;
+	height: 95%;
+	background-color: #E2DBE3;
+	text-align: justify;
+	border-radius: 3mm;
+	box-shadow: 0px 2px 16px #473737;
+}
+
 .recuadros p{
 	font-size: 0.9em;
 	padding: 8px;
@@ -70,17 +81,6 @@
 	right:4mm;
 	bottom: 2mm;	
 	/*float: right;*/
-}
-
-.recuadros div {
-	position: absolute;
-	top: 0px;
-	width: 30%;
-	height: 95%;
-	background-color: #E2DBE3;
-	text-align: justify;
-	border-radius: 3mm;
-	box-shadow: 0px 2px 16px #473737;
 }
 
 .recuadro1 {

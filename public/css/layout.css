@@ -184,9 +184,6 @@ h2 {
 	left: 0%;
 	margin-top: 2;
 	margin-bottom: 2;
-	border-style: none;
-	border-width: 1;
-	border-color: black;
 	margin-left: auto ;
 	margin-right: auto ;
 	height: 480;
@@ -206,7 +203,7 @@ h2 {
 	/*left:0;*/
 	height: 640;
 	width: 1024;
-	color: #510052;
+	color: white;
 	margin-left: auto;
 	margin-right: auto;
 	/*border-style: solid;
@@ -214,16 +211,14 @@ h2 {
 	/*font-size: 14px;*/
 }
 
-.contenido h1, .contenido h2, .contenido p {
+.contenido h1, .contenido h2, .contenido h3, .contenido p {
 	margin: 4;
 	padding: 4;
-	text-shadow: lightgray 1px 1px 0px;
+	text-shadow: 1px 1px 4px black;
 }
 
 .contenido h1 {
-	color: #E5CDE6;
 	color: white;
-	text-shadow: black 2px 3px 8px;
 }
 
 .contenido h2 {
@@ -233,9 +228,9 @@ h2 {
 .contenido p {
 	position: relative;
 	left: 0;
-	color: #142F45;
+	color: #241c1c;
 	text-align: left;
-	/*font-size: 1em;*/
+	text-shadow: 1px 1px 1px white;
 }
 
 .promociones {

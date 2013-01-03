@@ -65,9 +65,11 @@ function activarMenus(){
 				$j("#mnu-"+m).css("opacity","1.0");
 				/*$j("#mnu-"+m).attr("width","64px");
 				$j("#mnu-"+m).attr("height","64px");*/
-				var mnu = $j("#mnu-"+m).offset();
-				$j("#info-"+m).css("left",mnu.left); //$j(".menu").css("left")
-				//$j("#info-"+m).css("left",mnu.top);
+				var ofs = $j("#mnu-"+m).offset();
+				var top = ofs.top, left=ofs.left;
+				top += 48; left-=16;
+				$j("#info-"+m).css("left",left); //$j(".menu").css("left")
+				$j("#info-"+m).css("top",top);
 				$j("#info-"+m).slideDown("fast");
 			});
 			$j("#mnu-"+m).mouseleave( function() {
