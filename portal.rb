@@ -47,5 +47,9 @@ get '/blog' do
 	redirect "http://blog.zinlim.com"
 end
 
+get '/soporte' do
+	slim :soporte
+end
+
 get '/ingresar' do
 end

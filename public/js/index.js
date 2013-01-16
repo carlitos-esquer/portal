@@ -10,7 +10,7 @@ $j(document).ready( function () {
 	$j("#boton_index").mouseleave( function() {
 		$j("#boton_index").css("background-color","#2c5aa0");
 	});
-	setInterval(function(){fotograma()},5000);
+	setInterval(function(){fotograma()},4000);
 	prepararEfectosRecuadros();
 });
 
@@ -53,7 +53,7 @@ function cambiarfoto(n){
 	$j(".texto h1").show("slow");
 }
 
-var paginas = ["soluciones","capacitacion","soporte"];
+var paginas = ["desarrollo","capacitacion","soporte"];
 
 function prepararEfectosRecuadros(){
 	//alert("si prepara");
