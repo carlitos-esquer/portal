@@ -43,6 +43,10 @@ get '/nosotros' do
 	slim :nosotros
 end
 
+get '/tienda' do
+	redirect "http://tienda.zinlim.com"
+end
+
 get '/blog' do
 	redirect "http://blog.zinlim.com"
 end

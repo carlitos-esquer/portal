@@ -22,7 +22,7 @@ Array.prototype.empty = function() { return this.length == 0; }
 Array.prototype.first = function() { return this.empty() ? undefined : this[0]; }
 Array.prototype.last  = function() { return this.empty() ? undefined : this[this.length - 1]; }
 */
-var menus = ["inicio","desarrollo","capacitacion","portafolio","blog","nosotros"];
+var menus = ["inicio","desarrollo","capacitacion","portafolio","blog","nosotros","tienda"];
 var imagenes = ["slider1.png","slider2.png","slider3.png","slider4.png","slider5.png","slider6.png"];
 var imgCount = 0;
 
